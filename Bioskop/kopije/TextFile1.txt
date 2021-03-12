@@ -1,0 +1,98 @@
+﻿context.Korisnici.AddOrUpdate(x => x.Id,
+
+                new Models.Korisnik() { Id = 1, KorisnickoIme = "Pera", Lozinka = "pera", DatumRegistracije = new DateTime(2021,01,01) ,Uloga="user" },
+                new Models.Korisnik() { Id = 2, KorisnickoIme = "Zdera", Lozinka = "zdera", DatumRegistracije = new DateTime(2021, 01, 01),Uloga="user" },
+                new Models.Korisnik() { Id = 3, KorisnickoIme = "Glavni", Lozinka = "glavni", DatumRegistracije = new DateTime(2021, 01, 01),Uloga="admin" }
+               
+                );
+            context.SaveChanges();
+
+            context.Sale.AddOrUpdate(x => x.Id,
+                new Models.Sala() {Id = 1, Naziv = "MalaSala" },
+                new Models.Sala() {Id = 2, Naziv = "VelikaSala" },
+                new Models.Sala() {Id = 3, Naziv = "BisernaSala" }
+                );
+
+
+
+            context.SaveChanges();
+            context.TipProjekcija.AddOrUpdate(x => x.Id,
+                new Models.TipProjekcije() {Id = 1,Naziv="2D" },
+                new Models.TipProjekcije() {Id = 2,Naziv="3D" },
+                new Models.TipProjekcije() {Id = 3,Naziv="4D" }
+                );
+
+
+            context.SaveChanges();
+
+
+            context.SalaTips.AddOrUpdate(x => x.Id,
+                new Models.SalaTip() { Id = 1, SalaId = 1, TipProjekcijeId = 1 },
+                new Models.SalaTip() { Id = 2, SalaId = 1, TipProjekcijeId = 2 },
+                new Models.SalaTip() { Id = 3, SalaId = 2, TipProjekcijeId = 1 },
+                new Models.SalaTip() { Id = 4, SalaId = 2, TipProjekcijeId = 3 },
+                new Models.SalaTip() { Id = 5, SalaId = 3, TipProjekcijeId = 3 }
+
+                );
+            context.SaveChanges();
+
+            context.Sedista.AddOrUpdate( x => x.Id ,
+                new Models.Sediste() {Id = 1,  RedniBroj = 1, SalaId = 1 },
+                new Models.Sediste() {Id = 2,  RedniBroj = 2, SalaId = 1 },
+                new Models.Sediste() {Id = 3, RedniBroj = 3, SalaId = 1 },
+                new Models.Sediste() { Id = 4, RedniBroj = 4, SalaId = 1 },
+                new Models.Sediste() { Id = 5, RedniBroj = 1, SalaId = 2 },
+                new Models.Sediste() { Id = 6, RedniBroj = 2, SalaId = 2 },
+                new Models.Sediste() { Id = 7, RedniBroj = 3, SalaId = 2 },
+                new Models.Sediste() { Id = 8, RedniBroj = 4, SalaId = 2 },
+                new Models.Sediste() { Id = 9, RedniBroj = 1, SalaId = 3 },
+                new Models.Sediste() { Id = 10, RedniBroj = 1, SalaId = 3 },
+                new Models.Sediste() { Id = 11, RedniBroj = 2, SalaId = 3 },
+                new Models.Sediste() { Id = 12, RedniBroj = 3, SalaId = 3 },
+                new Models.Sediste() { Id = 13, RedniBroj = 4, SalaId = 3 },
+                new Models.Sediste() { Id = 14, RedniBroj = 5, SalaId = 3 },
+                new Models.Sediste() { Id = 15, RedniBroj = 6, SalaId = 3 }
+
+                );
+            context.Filmovi.AddOrUpdate(x => x.Id,
+
+               new Models.Film() { Id = 1,Naziv ="red sonja ",Reziser="hickok",Glumci="Alen delon ,Edy marfy",Zanr= "komedija",Trajanje = 90,Distributer= "cinestar",Zemlja = "usa", GodinaProizvodnje = 2010 ,Opis = " veoma dobar film za sada"},
+               new Models.Film() { Id = 2,Naziv ="alpacino ",Reziser="dargus",Glumci="Alen delon ,Edy marfy",Zanr= "komedija",Trajanje = 105,Distributer= "cinestar",Zemlja = "usa", GodinaProizvodnje = 2005 ,Opis = " veoma dobar film za sada"},
+               new Models.Film() { Id = 3,Naziv ="good father ",Reziser="magus",Glumci="Alen delon ,Edy marfy",Zanr= "komedija",Trajanje = 120,Distributer= "cinestar",Zemlja = "usa", GodinaProizvodnje = 2000 ,Opis = " veoma dobar film za sada"},
+               new Models.Film() { Id = 4,Naziv ="osmi putnik ",Reziser="ragus",Glumci="Alen delon ,Edy marfy",Zanr= "komedija",Trajanje = 85,Distributer= "cinestar",Zemlja = "usa", GodinaProizvodnje = 2009 ,Opis = " veoma dobar film za sada"},
+               new Models.Film() { Id = 5,Naziv ="varljivo leto ",Reziser="hickok",Glumci="Alen delon ,Edy marfy",Zanr= "komedija",Trajanje = 115,Distributer= "cinestar",Zemlja = "srb", GodinaProizvodnje = 2008 ,Opis = " veoma dobar film za sada"}
+
+
+               );
+            context.SaveChanges();
+            context.Projekcije.AddOrUpdate(x => x.Id,
+                new Models.Projekcija() {Id= 1,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 1 ,TipId = 1 , SalaId = 1  },
+                new Models.Projekcija() {Id= 2,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 2 ,TipId = 2 , SalaId = 3  },
+                new Models.Projekcija() {Id= 3,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 2 ,TipId = 3 , SalaId = 2 },
+                new Models.Projekcija() {Id= 4,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 3 ,TipId =2 , SalaId = 2  },
+                new Models.Projekcija() {Id= 5,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 1 ,TipId = 1 , SalaId = 1  },
+                new Models.Projekcija() {Id= 6,Datum = new DateTime(2021, 01, 01), CenaKarte = 525.5 ,Administrator = "glavni",FilmId = 1 ,TipId = 1 , SalaId = 1  }
+                
+                
+                
+                );
+            context.SaveChanges();
+
+            context.Karte.AddOrUpdate(x => x.Id,
+                new Models.Karta() { Id = 1, DatumProdaje = new DateTime(2021, 01, 01), KorisnikId = 1, ProjekcijaId = 1, SedisteId = 1 },
+                new Models.Karta() { Id = 1, DatumProdaje = new DateTime(2021, 01, 01), KorisnikId = 1, ProjekcijaId = 2, SedisteId = 2 },
+                new Models.Karta() { Id = 1, DatumProdaje = new DateTime(2021, 01, 01), KorisnikId = 2, ProjekcijaId = 2, SedisteId = 3 },
+                new Models.Karta() { Id = 1, DatumProdaje = new DateTime(2021, 01, 01), KorisnikId = 2, ProjekcijaId = 4, SedisteId = 4 },
+                new Models.Karta() { Id = 1, DatumProdaje = new DateTime(2021, 01, 01), KorisnikId = 1, ProjekcijaId = 4, SedisteId = 5 }
+               ) ;
+
+
+            context.SaveChanges();
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop", "Bioskop\Bioskop.csproj", "{45E9BF41-49F4-404B-A28F-5BA5B18F9633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bioskop.Tests", "Bioskop.Tests\Bioskop.Tests.csproj", "{74CF31E9-6974-408F-B957-8289031312C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45E9BF41-49F4-404B-A28F-5BA5B18F9633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E9BF41-49F4-404B-A28F-5BA5B18F9633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E9BF41-49F4-404B-A28F-5BA5B18F9633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E9BF41-49F4-404B-A28F-5BA5B18F9633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CF31E9-6974-408F-B957-8289031312C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CF31E9-6974-408F-B957-8289031312C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CF31E9-6974-408F-B957-8289031312C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CF31E9-6974-408F-B957-8289031312C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79ECB64A-84E7-4418-B3C8-01912D639A68}
+	EndGlobalSection
+EndGlobal
