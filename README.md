@@ -13,7 +13,8 @@ Applikacija simulira online kupovinu  bioskopskih  karata.
              2.update-database 
 
 - Entity Framework  stvara bazu (Bioskop)  sa tabelama , popunjenim sa pocetnim podacima potrebnim za  manipulaciju sa app.
--Korisnici  :(admin) korinicko ime : Glavni
+ -Korisnici  :(admin) korinicko ime : Glavni
                      lozinka       : Sifra.1234 
               (user) korisnicko ime : pera
                      lozinka         :Sifra.123
+                     
