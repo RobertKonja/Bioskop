@@ -610,7 +610,7 @@ $(document).ready(function () {
         var tipprojekcije = $("#tipprojekcije").val();
         var cenakarte1 = $("#cenakarte1").val();
         var cenakarte2 = $("#cenakarte2").val();
-        httpaction = "post";
+        httpaction = "POST";
         url = 'https://' + host + "/api/Projekcije/Pretraga";
         senddata = {
             "NazivFilma": nazivFilma,
